@@ -1,5 +1,7 @@
 package com.galvanize.mortgagelender;
 
+import java.util.List;
+
 public class MortgageLender {
     private double funds;
 
@@ -28,4 +30,12 @@ public class MortgageLender {
     }
 
 
+    public void qualifyLoans(List<Borrower> borrowerList) {
+        for (Borrower b : borrowerList) {
+            double savingsToLoanRatio = b.getLoanAmount() / b.getSavings();
+            if (b.getDti() < 36 && b.getCreditScore() > 620 && savingsToLoanRatio > 0.25 ) {
+                b.setQualified(true);
+            }
+        }
+    }
 }
