@@ -1,2 +1,4 @@
-MortgageLender.java
- MortgageLender
+com/galvanize/mortgagelender/Borrower.java
+ com.galvanize.mortgagelender.Borrower
+com/galvanize/mortgagelender/MortgageLender.java
+ com.galvanize.mortgagelender.MortgageLender

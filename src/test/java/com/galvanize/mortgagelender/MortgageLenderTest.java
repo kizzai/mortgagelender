@@ -26,8 +26,10 @@ class MortgageLenderTest {
     public void shouldApproveOrDenyLoan(){
       MortgageLender mortgageLender = new MortgageLender();
       double loanAmount = 125000;
-    //  assertTrue(loanAmount <mortgageLender.getFunds());
+      mortgageLender.addFunds(100000);
       Borrower borrower = new Borrower(loanAmount);
       mortgageLender.validateLoanAmount(borrower);
+      assertEquals(borrower.getStatus(), "denied");
+
     }
 };

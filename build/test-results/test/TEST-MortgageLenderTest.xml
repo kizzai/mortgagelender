@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MortgageLenderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-06-25T16:02:37" hostname="LAPTOP-VE101AIV" time="0.028">
-  <properties/>
-  <testcase name="addingLenderMoney()" classname="MortgageLenderTest" time="0.025"/>
-  <testcase name="getAvailableFunds()" classname="MortgageLenderTest" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -21,7 +21,10 @@ public class MortgageLender {
 
     public void validateLoanAmount(Borrower borrower) {
         if(borrower.getLoanAmount()<funds){
-           borrower.status = null;
+           borrower.setStatus("Approve") ;
+            }
+        else{
+            borrower.setStatus("denied");
         }
     }
 }
