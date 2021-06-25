@@ -23,13 +23,24 @@ class MortgageLenderTest {
         assertTrue(mortgageLender.getFunds() > 0 );
     }
     @Test
-    public void shouldApproveOrDenyLoan(){
+    public void shouldDenyLoan(){
       MortgageLender mortgageLender = new MortgageLender();
       double loanAmount = 125000;
       mortgageLender.addFunds(100000);
       Borrower borrower = new Borrower(loanAmount);
       mortgageLender.validateLoanAmount(borrower);
-      assertEquals(borrower.getStatus(), "denied");
-
+      assertEquals(borrower.getStatus(), "denied","should deny the loan amount" + loanAmount);
     }
+
+    @Test
+    public void shouldApproveLoan(){
+        MortgageLender mortgageLender = new MortgageLender();
+        double loanAmount = 125000;
+        mortgageLender.addFunds(200000);
+        Borrower borrower = new Borrower(loanAmount);
+        mortgageLender.validateLoanAmount(borrower);
+        assertEquals(borrower.getStatus(), "approve","should approve the loan amount " + loanAmount);
+    }
+
+
 };
