@@ -1,2 +1,0 @@
-com/galvanize/mortgagelender/MortgageLenderTest.java
- com.galvanize.mortgagelender.MortgageLenderTest

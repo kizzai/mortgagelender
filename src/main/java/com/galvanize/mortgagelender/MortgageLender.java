@@ -26,4 +26,6 @@ public class MortgageLender {
             borrower.setStatus("denied");
         }
     }
+
+
 }
