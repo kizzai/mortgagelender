@@ -1,3 +1,7 @@
+package com.galvanize.mortgagelender;
+
+import com.galvanize.mortgagelender.Borrower;
+import com.galvanize.mortgagelender.MortgageLender;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

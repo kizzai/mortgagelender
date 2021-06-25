@@ -1,3 +1,5 @@
+package com.galvanize.mortgagelender;
+
 public class MortgageLender {
     private double funds;
 
@@ -19,7 +21,7 @@ public class MortgageLender {
 
     public void validateLoanAmount(Borrower borrower) {
         if(borrower.getLoanAmount()<funds){
-           borrower.status =
+           borrower.status = null;
         }
     }
 }
