@@ -32,10 +32,14 @@ public class MortgageLender {
 
     public void qualifyLoans(List<Borrower> borrowerList) {
         for (Borrower b : borrowerList) {
-            double savingsToLoanRatio = b.getLoanAmount() / b.getSavings();
-            if (b.getDti() < 36 && b.getCreditScore() > 620 && savingsToLoanRatio > 0.25 ) {
-                b.setQualified(true);
-            }
+            qualifyLoan(b);
+        }
+    }
+
+    public void qualifyLoan(Borrower b) {
+        double savingsToLoanRatio = b.getSavings()/b.getLoanAmount();
+        if (b.getDti() < 36 && b.getCreditScore() > 620 && savingsToLoanRatio > 0.25 ) {
+            b.setQualified(true);
         }
     }
 }
