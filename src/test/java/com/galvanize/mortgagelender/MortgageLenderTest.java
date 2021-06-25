@@ -60,7 +60,7 @@ class MortgageLenderTest {
         assertFalse(borrower2.isQualified(), "Borrower2 must not qualify");
         assertFalse(borrower3.isQualified(), "Borrower3 must not qualify");
         assertFalse(borrower4.isQualified(), "Borrower4 must not qualify");
+        System.out.println(borrowerList);
     }
-
 
 };
