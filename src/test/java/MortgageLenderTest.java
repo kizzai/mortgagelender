@@ -7,7 +7,7 @@ class MortgageLenderTest {
     @Test
     public void getAvailableFunds() {
         MortgageLender mortgageLender = new MortgageLender();
-        double expectedFunds = 5;
+        double expectedFunds = 0;
         double actual = mortgageLender.getFunds();
         assertEquals(expectedFunds,actual, "Should equal expected to actual available funds from the bank");
     }
