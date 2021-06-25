@@ -12,4 +12,11 @@ class MortgageLenderTest {
         assertEquals(expectedFunds,actual, "Should equal expected to actual available funds from the bank");
     }
 
-}
+    @Test
+    public void addingLenderMoney() {
+        MortgageLender mortgageLender = new MortgageLender();
+        mortgageLender.addFunds(500);
+        assertTrue(mortgageLender.getFunds > 0 );
+    }
+
+};
