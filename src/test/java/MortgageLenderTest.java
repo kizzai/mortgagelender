@@ -16,7 +16,7 @@ class MortgageLenderTest {
     public void addingLenderMoney() {
         MortgageLender mortgageLender = new MortgageLender();
         mortgageLender.addFunds(500);
-        assertTrue(mortgageLender.getFunds > 0 );
+        assertTrue(mortgageLender.getFunds() > 0 );
     }
 
 };

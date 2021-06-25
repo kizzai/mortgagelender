@@ -12,4 +12,8 @@ public class MortgageLender {
     public void setFunds(double funds) {
         this.funds = funds;
     }
+
+    public void addFunds(double fund) {
+        this.funds += fund;
+    }
 }
