@@ -18,5 +18,12 @@ class MortgageLenderTest {
         mortgageLender.addFunds(500);
         assertTrue(mortgageLender.getFunds() > 0 );
     }
-
+    @Test
+    public void shouldApproveOrDenyLoan(){
+      MortgageLender mortgageLender = new MortgageLender();
+      double loanAmount = 125000;
+    //  assertTrue(loanAmount <mortgageLender.getFunds());
+      Borrower borrower = new Borrower(loanAmount);
+      mortgageLender.validateLoanAmount(borrower);
+    }
 };

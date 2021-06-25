@@ -16,4 +16,10 @@ public class MortgageLender {
     public void addFunds(double fund) {
         this.funds += fund;
     }
+
+    public void validateLoanAmount(Borrower borrower) {
+        if(borrower.getLoanAmount()<funds){
+           borrower.status =
+        }
+    }
 }
